@@ -1,0 +1,140 @@
+/* Importing Google Fonts */
+
+/* Poppins Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* Common Styles */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ------------------ 
+ Styling Header Part 
+---------------------*/
+
+header {
+    height: 667px;
+    background-color: #2D25A0;
+    padding: 43px 140px 86px 156px;
+}
+
+/* navbar styles*/
+
+.nav-container {
+    height: 44px;
+    width: 100%;
+    margin-bottom: 48px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links a{
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+
+/* Selecting all anchor tags if left nav side except first one  */
+.nav-links.left-side a:not(:first-child) {
+    margin-left: 36px;
+}
+
+.nav-links.right-side a{
+    height: 44px;
+    width: 123px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-color: #E02C6D;
+}
+
+.nav-links.right-side a img {
+    height: 24px;
+    margin-right: 6px;
+}
+
+/* overview styles*/
+.overview {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 102px;
+}
+
+.overview-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.overview-title {
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 27px;
+    line-height: 80px;
+}
+
+.watch-live-btn {
+    background-color: #E02C6D;
+    color: white;
+    display: inline-block;
+    height: 44px;
+    width: 168px;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0px;
+}
+
+.overview-thumbnail img {
+    width: 100%;
+}
+
+
+
+/* Players Section Style */
+
+.player-container{
+    
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+
+    margin: 70px 210px 50px 140px;
+}
+
+.player {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15); ;
+    padding: 15px 15px 33px;
+}
+
+.player img{
+    height: 256px;
+    width: 300px;
+}
+
+.player-name {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.player-details {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+}
