@@ -17,9 +17,11 @@ body {
 ---------------------*/
 
 header {
-    height: 667px;
+    width: 100%;
+    height: 677px;
     background-color: #2D25A0;
     padding: 43px 140px 86px 156px;
+    box-sizing: border-box;
 }
 
 /* navbar styles*/
@@ -76,6 +78,8 @@ header {
 }
 
 .overview-title {
+    height: 230px;
+    width: 485px;
     font-size: 64px;
     font-weight: 700;
     color: white;
@@ -97,16 +101,13 @@ header {
 }
 
 .overview-thumbnail img {
-    width: 100%;
+    width: 556px;
+    height: 438px;
 }
 
 
 
 /* Players Section Style */
-
-.player-container{
-    
-}
 
 .players {
     display: grid;
