@@ -383,11 +383,15 @@ hr {
 
 @media only screen and (max-width: 668px) {
 
+    * {
+        border: 1px solid red;
+    }
+
     .nav-links.left-side a {
         display: none;
     }
     header {
-        width: 100%;
+        width: 88%;
         height: 695px;
         padding: 33px 66px 61px 16px;
     }
