@@ -384,6 +384,11 @@ hr {
 /* For Mobile Devices */
 
 @media only screen and (max-width: 668px) {
+
+    body {
+        width: 358px;
+    }
+
     .nav-links.left-side a {
         display: none;
     }
@@ -395,7 +400,10 @@ hr {
     .overview {
         grid-template-columns: 1fr;
         grid-row-gap: 50px;
+        overflow-x: hidden;
     }
+
+    
     .overview-title {
         height: 138px;
         width: 278px;
@@ -410,6 +418,7 @@ hr {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 350px;
     }
     .overview-title:first-child h1 {
         line-height: 50px;
@@ -421,13 +430,14 @@ hr {
         height: 260px;
         width: 329px;
     }
+
     .players {
         grid-template-columns: 1fr;
         margin: 47px 15px 60px;
     }
     .highlights {
         display: grid;
-        width: 360px;
+        width: 320px;
         padding: 15px;
         margin-top: 60px;
         grid-template-columns: 1fr;
