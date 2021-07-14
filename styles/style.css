@@ -98,6 +98,11 @@ header {
     font-size: 16px;
     font-weight: 500;
     border: 0px;
+    cursor: pointer;
+}
+
+.fa-arrow-right {
+    margin-left: 8px;
 }
 
 .overview-thumbnail img {
@@ -115,7 +120,7 @@ header {
     grid-row-gap: 27px;
     grid-column-gap: 30px;
 
-    margin: 70px 210px 50px 140px;
+    margin: 70px 210px 50px 180px;
 }
 
 .player {
@@ -147,9 +152,11 @@ header {
 }
 
 /* Optional Highlights Section Style */
+
 .highlights {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 115px;
     padding-left: 182px;
     padding-right: 156px;
     grid-column-gap: 66px;
@@ -157,15 +164,20 @@ header {
 }
 
 .highlights-details{
+    margin: 0;
     height: 309px;
     width: 469px;
+}
+
+.watch-live-btn:last-child{
+    width: 172px;
 }
 
 .highlights-details h1 {
     font-size: 48px;
     font-weight: 700;
     line-height: 60px;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .highlights-details p {
@@ -183,4 +195,52 @@ header {
 .highlights-thumbnail img {
     height: 100%;
     width: 100%;
+}
+
+/* Footer Styles */
+
+.footer-container {
+    height: 213px;
+    width: 483px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 158px;
+    margin-bottom: 63px;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-row-gap: 20px;
+}
+
+.logo {
+    height: 110px;
+    width: 484px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.social-icons {
+    height: 32px;
+    width: 170px;
+}
+
+.social-icons > a img {
+    height: 32px;
+    width: 32px;
+}
+
+.copyright {
+    height: 31px;
+    width: 236px;
+    margin: 0px;
+}
+
+.copyright p {
+    margin: 0px;
+    text-align: center;
 }
