@@ -3,8 +3,6 @@
 /* Poppins Font */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-
 /* Common Styles */
 
 body {
@@ -24,32 +22,30 @@ header {
     box-sizing: border-box;
 }
 
-/* navbar styles*/
-
 .nav-container {
     height: 44px;
     width: 100%;
     margin-bottom: 48px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.nav-links a{
+.nav-links a {
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
     color: white;
 }
 
-/* Selecting all anchor tags if left nav side except first one  */
+/* Styling all anchor tags of left nav side except first one  */
+
 .nav-links.left-side a:not(:first-child) {
     margin-left: 36px;
 }
 
-.nav-links.right-side a{
+.nav-links.right-side a {
     height: 44px;
     width: 123px;
     display: flex;
@@ -64,11 +60,13 @@ header {
     margin-right: 6px;
 }
 
-/* overview styles*/
+/* overview styles start */
+
 .overview {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 102px;
+    align-items: center;
 }
 
 .overview-item {
@@ -77,14 +75,16 @@ header {
     justify-content: center;
 }
 
-.overview-title {
+.overview-item:first-child {
     height: 230px;
     width: 485px;
+}
+
+.overview-title:first-child h1 {
     font-size: 64px;
     font-weight: 700;
     color: white;
-    margin-top: 0;
-    margin-bottom: 27px;
+    margin: 0;
     line-height: 80px;
 }
 
@@ -99,6 +99,7 @@ header {
     font-weight: 500;
     border: 0px;
     cursor: pointer;
+    margin-top: 27px;
 }
 
 .fa-arrow-right {
@@ -110,28 +111,44 @@ header {
     height: 438px;
 }
 
+/* Header Styles End */
 
+/* Header Transition  Start */
 
-/* Players Section Style */
+header:hover .overview-title span {
+    display: inline-block;
+    transform: rotateY(360deg);
+    transition: transform 2s linear 0.2s;
+}
+
+header:hover .overview-item>.watch-live-btn {
+    display: inline-block;
+    transform: rotateY(360deg);
+    transition: transform 2s linear 0.2s;
+}
+
+/* Header Transition  End */
+
+/* Players Section Style Start*/
 
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 27px;
     grid-column-gap: 30px;
-
     margin: 70px 210px 50px 180px;
 }
 
 .player {
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15); ;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    ;
     padding: 15px;
     height: 474px;
     width: 330px;
     box-sizing: border-box;
 }
 
-.player img{
+.player img {
     height: 256px;
     width: 300px;
 }
@@ -151,7 +168,9 @@ header {
     line-height: 26px;
 }
 
-/* Optional Highlights Section Style */
+/* Players Section Styles End */
+
+/* Optional Highlights Section Style Start */
 
 .highlights {
     display: grid;
@@ -163,14 +182,15 @@ header {
     align-items: center;
 }
 
-.highlights-details{
+.highlights-details {
     margin: 0;
     height: 309px;
     width: 469px;
 }
 
-.watch-live-btn:last-child{
+.watch-live-btn:last-child {
     width: 172px;
+    margin-top: 24px;
 }
 
 .highlights-details h1 {
@@ -185,6 +205,7 @@ header {
     font-weight: 400;
     line-height: 28px;
     margin-top: 8px;
+    margin-bottom: 0;
 }
 
 .highlights-thumbnail {
@@ -197,17 +218,17 @@ header {
     width: 100%;
 }
 
-/* Footer Styles */
+/* Optional Highlights Section Style End */
+
+/* Footer Styles Starts*/
 
 .footer-container {
     height: 213px;
     width: 483px;
-
     margin-left: auto;
     margin-right: auto;
     margin-top: 158px;
     margin-bottom: 63px;
-
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
@@ -229,7 +250,7 @@ header {
     width: 170px;
 }
 
-.social-icons > a img {
+.social-icons>a img {
     height: 32px;
     width: 32px;
 }
@@ -244,3 +265,5 @@ header {
     margin: 0px;
     text-align: center;
 }
+
+/* Footer Styles End*/
