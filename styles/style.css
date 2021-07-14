@@ -384,7 +384,6 @@ hr {
 /* For Mobile Devices */
 
 @media only screen and (max-width: 668px) {
-
     .nav-links.left-side a {
         display: none;
     }
@@ -399,8 +398,6 @@ hr {
         grid-row-gap: 50px;
         overflow-x: hidden;
     }
-
-    
     .overview-title {
         height: 138px;
         width: 278px;
@@ -427,10 +424,10 @@ hr {
         height: 260px;
         width: 329px;
     }
-
     .players {
         grid-template-columns: 1fr;
         margin: 47px 15px 60px;
+        justify-items: center;
     }
     .highlights {
         display: grid;
@@ -440,12 +437,10 @@ hr {
         grid-template-columns: 1fr;
         grid-row-gap: 20px;
     }
-
     .highlights-details {
         width: 329px;
         height: 291px;
     }
-
     .highlights-details h1 {
         font-size: 30px;
         font-weight: 700;
@@ -456,17 +451,13 @@ hr {
         font-weight: 400;
         line-height: 28px;
     }
-
-    .highlights-details h1 + p {
+    .highlights-details h1+p {
         width: 329px;
     }
-
     .highlights-thumbnail {
         height: 248px;
         width: 328px;
     }
-
-
     .latest-news {
         margin: 10px;
     }
@@ -474,20 +465,16 @@ hr {
         grid-template-columns: repeat(1, 1fr);
         width: 340px;
     }
-
     .subscribe .section-title {
         font-size: 1.5em;
     }
-
-    .subscribe input[type="email"]{
+    .subscribe input[type="email"] {
         width: 70%;
     }
-
     .subscribe #subscribe-btn {
         margin-top: 20px;
         width: 90px;
     }
-
     .footer-container {
         display: flex;
         flex-direction: column;
@@ -495,62 +482,51 @@ hr {
         justify-content: center;
         width: 300px;
     }
-
-    .footer-container .logo{
+    .footer-container .logo {
         width: 270px;
         height: 63px;
     }
 }
 
+/* Responsive for tablets */
+
 @media only screen and (min-width:668px) and (max-width:992px) {
-   
-    .nav-container{
+    .nav-container {
         width: 100%;
     }
-
     .nav-links.left-side a {
         display: inline-block;
         margin-left: 5px;
     }
-
     .nav-links.left-side a:not(:first-child) {
-       margin-left: 15px;
+        margin-left: 15px;
     }
-
     header {
         width: 100%;
         height: 850px;
         padding: 20px;
         box-sizing: unset;
     }
-    
     .overview, .highlights {
         grid-template-columns: 1fr;
         grid-row-gap: 50px;
         overflow-x: hidden;
     }
-
     .overview-item:first-child {
         margin-top: 24px;
     }
-
     .overview-item:last-child {
         margin-top: 40px;
     }
-
     .players, .all-news {
         margin: 30px 5px;
         grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
     }
-
     .latest-news {
         margin: 20px;
     }
-    .subscribe input[type="email"]{
+    .subscribe input[type="email"] {
         width: 50%;
     }
-
-
-
-
 }
